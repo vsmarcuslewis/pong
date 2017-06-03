@@ -10,7 +10,7 @@ Additional study and research to complete the entire game.
 # Demo
 [Play Almost Impossible Pong](http://varietystudios.com/programming/JS/pong)
 
-**Features**
+**Features** <br>
 – Speed increases over time <br>
 – Score keeping <br>
 – Tracks game hit count <br>
