@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Conv_pixelmix';
+    src: url('../fonts/pixelmix.eot');
+    src: local('☺'), url('../fonts/pixelmix.woff') format('woff'), url('../fonts/pixelmix.ttf') format('truetype'), url('../fonts/pixelmix.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

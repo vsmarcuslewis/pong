@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>¡pongg-ish!</title>
+
+    <meta name="description" content="The Variety Studios take on the classic Pong. Practicing Javascript with Syracuse, New York based graphic design and web development agency." />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <link rel="canonical" href="http://varietystudios.com" />
+    <link rel="publisher" href="https://facebook.com/varietystudios" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pong with Variety Studios ›› Creative Design Studio based in Syracuse, New York: Specializing in Graphic and Web Design / Development" />
+    <meta property="og:description" content="The Variety Studios take on the classic Pong. Practicing Javascript with Syracuse, New York based graphic design and web development agency." />
+    <meta property="og:url" content="http://varietystudios.com" />
+    <meta property="og:site_name" content="Variety Studios" />
+    <meta property="fb:admins" content="186635659620" />
+    <meta property="og:image" content="http://varietystudios.com/images/variety-studios-share-image.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="The Variety Studios take on the classic Pong. Practicing Javascript with Syracuse, New York based graphic design and web development agency." />
+    <meta name="twitter:title" content="Pong, with Variety Studios ›› Creative Design Studio based in Syracuse, New York: Specializing in Graphic and Web Design / Development" />
+    <meta name="twitter:site" content="@varietystudios" />
+    <meta name="twitter:image" content="http://varietystudios.com/images/variety-studios-share-image.png" />
+    <meta name="twitter:creator" content="@vsmarcuslewis" />
+    <meta name="author" content="@vsmarcuslewis">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1">
+
+    <link rel="icon" type="image/png" href="http://varietystudios.com/images/favicon.png">
+    <link rel="stylesheet" href="css/pong.css">
+    <link rel="stylesheet" href="css/fonts.css">
+</head>
+
+<body>
+
+    <h1>¡pongg-ish!</h1>
+
+    <div class="players">
+        <h2>AI</h2>
+        <h2>User<span id="highestCount"></span></h2>
+    </div>
+    <div id="aiScore"></div>
+    <div id="userScore"></div>
+
+    <div id="fullCount"></div>
+    <div id="prevScore"></div>
+
+    <h2 id="start" class="">Start</h2>
+
+    <canvas id="pongBoard"></canvas>
+
+    <audio id="playerAudio" controls>
+        <source src="sound/player-beep.mp3" type="audio/mpeg">
+        <source src="sound/player-beep.ogg" type="audio/ogg">
+    </audio>
+    <audio id="topBottomAudio" controls>
+        <source src="sound/top-bottom-beep.mp3" type="audio/mpeg">
+        <source src="sound/top-bottom-beep.ogg" type="audio/ogg">
+    </audio>
+    <audio id="loseAudio" controls>
+        <source src="sound/lose-beep.mp3" type="audio/mpeg">
+        <source src="sound/lose-beep.ogg" type="audio/ogg">
+    </audio>
+
+    <script src="js/pong.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-8394715-50', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</body>
+
+</html>

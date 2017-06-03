@@ -1,0 +1,124 @@
+body {
+    font-family: 'Conv_pixelmix', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: .05em;
+}
+h1,
+canvas {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+}
+h1 {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: .5%;
+    text-align: center;
+    color: #fff;
+    font-size: 120%;
+    z-index: 3;
+}
+h2,
+p {
+    display: inline-block;
+}
+.players {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 2;
+}
+.players span {
+    display: block;
+}
+.players h2 {
+    display: inline-block;
+    margin: 2% 0 0 3%;
+    color: #fff;
+    font-size: 100%;
+    line-height: 160%;
+}
+.players h2:last-of-type {
+    float: right;
+    margin: 2% 3% 0 0;
+    text-align: right;
+}
+#aiScore,
+#userScore {
+    position: absolute;
+    top: 5%;
+    color: #fff;
+    font-size: 80px;
+    pointer-events: none;
+    z-index: 2;
+}
+#aiScore {
+    left: 25%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+#userScore {
+    right: 25%;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+}
+#start,
+#fullCount,
+#prevScore {
+    position: absolute;
+    background: #fff;
+    margin: 0;
+    padding: 16px 20px;
+    top: 50%;
+    left: 50%;
+    color: #900;
+    font-size: 90%;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    -webkit-transition: all ease-in-out .2s;
+    transition: all ease-in-out .2s;
+    cursor: pointer;
+    z-index: 2;
+}
+#fullCount,
+#prevScore {
+    display: block;
+    background: none;
+    padding: 0;
+    max-width: 180px;
+    top: auto;
+    bottom: 2%;
+    color: #fff;
+    line-height: 160%;
+    pointer-events: none;
+}
+#fullCount {
+    left: 25%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+#prevScore {
+    right: 25%;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+}
+#start.clicked {
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
+}
+canvas {
+    position: absolute;
+    background: #900;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+audio {
+    position: relative;
+    display: none;
+    z-index: 3;
+}
